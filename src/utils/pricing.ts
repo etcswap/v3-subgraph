@@ -5,17 +5,17 @@ import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
 const WETH_ADDRESS = '0x1953cab0e5bfa6d4a9bad6e05fd46c1cc6527a5a'
-const USDC_WETH_03_POOL = '0xe0c97a851044d74b2c5d5cc1ebd4ae006d9aa353'
+const USDC_WETH_03_POOL = '0x8fa4d94ec93a839923ceb37194323d081a24f4ec'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
-  '0xd333787e69dbfc47e67c59441e392eb530b3dc19', // USDC
+  '0xde093684c796204224bc081f937aa059d903c52a', // USDC
 ]
 
 let STABLE_COINS: string[] = [
-  '0xd333787e69dbfc47e67c59441e392eb530b3dc19' // USDC
+  '0xde093684c796204224bc081f937aa059d903c52a' // USDC
 ]
 
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString('60')
